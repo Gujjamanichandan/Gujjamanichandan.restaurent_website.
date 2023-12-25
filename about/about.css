@@ -1,0 +1,281 @@
+body {
+    font-family: "DM Sans";
+    font-size: 17px;
+    line-height: 30px;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+  }
+  
+  main {
+    width: 1200px;
+    margin: 0 auto;
+  }
+  h1,
+  h3,
+  h4,
+  h5,
+  p {
+    color: white;
+  }
+  h2 {
+    color: #b29a0f;
+    font-size: 28px;
+    font-style: italic;
+    margin-bottom: -10px;
+  }
+  
+  h1 {
+    font-family: "Poppins";
+    font-size: 48px;
+    line-height: 1.2em;
+  }
+  
+  h4 {
+    font-size: 20px;
+    font-weight: 400;
+  }
+  
+  header,
+  section {
+    padding: 20px;
+    text-align: left;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #000;
+  }
+  
+  .logo img {
+    height: 100px;
+    margin-left: 40px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin-right: 40px;
+    padding: 0;
+  }
+  
+  nav li {
+    display: inline;
+    margin-left: 20px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  nav a:hover {
+    color: #7630f4;
+  }
+  #first-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+    padding-bottom: 50px;
+    padding-top: 50px;
+  }
+  section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .column {
+    flex: 1;
+    padding: 10px;
+    text-align: left;
+    box-sizing: border-box;
+  }
+  
+  .column-info img {
+    width: 30%;
+    padding-bottom: 0px;
+  }
+  
+  .column-info {
+    text-align: center;
+  }
+  
+  .column-info h3 {
+    font-size: 18px;
+    line-height: 1.2em;
+  }
+  
+  .column-info p {
+    margin-bottom: -12px;
+  }
+  .service-column {
+    flex: 1;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 5px;
+  }
+  
+  #third-section {
+    padding-top: 80px;
+    padding-bottom: 50px;
+  }
+  
+  #fourth-section {
+    background-color: #1b1a1a;
+    margin-bottom: 80px;
+  }
+  
+  #contact-info {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #1b1a1a;
+    padding: 2% 9% 0 9%;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label,
+  input {
+    margin-bottom: 10px;
+  }
+  
+  button {
+    background-color: #7630f4;
+    color: white;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-right: 10px;
+    font-size: 20px;
+    transition: background-color 0.3s;
+  }
+  button:hover {
+    background-color: #000;
+  }
+  
+  /* footer */
+  
+  .four-column-footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #7630f4;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  .footer-column {
+    flex: 1;
+    padding: 10px;
+    text-align: left;
+  }
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+  .navigation a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+  }
+  
+  /* about page */
+  
+  .text-section {
+    margin-top: -80px;
+  }
+  
+  .hero-section {
+    background: url("../imgs/streamer-69.png") center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+  }
+  
+  .testimonial-slider-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    background-color: #211f19;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    margin-bottom: 50px;
+  }
+  
+  .testimonial-container {
+    max-width: 1100px;
+    overflow: hidden;
+  }
+  
+  .testimonial-slide {
+    display: none;
+    text-align: center;
+  }
+  
+  #testimonal-title {
+    text-align: center;
+    margin-bottom: 0px;
+  }
+  
+  .testimonial-text {
+    font-size: 18px;
+    margin-bottom: 10px;
+    line-height: 1.4em;
+  }
+  
+  .testimonial-author {
+    font-style: italic;
+    color: #777;
+  }
+
+  li{
+    list-style: none;
+  }
+  
+  .slider-arrows {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 10px;
+  }
+  
+  .arrow {
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  /* Optional: Style the arrows as needed */
+  .left-arrow {
+    margin-left: -50px;
+    color: white;
+    margin-top: -120px;
+  }
+  
+  .right-arrow {
+    margin-right: -50px;
+    margin-top: -120px;
+    color: white;
+  }
+  
+  #quote-image {
+    width: 50px;
+    margin-bottom: -10px;
+  }
+  

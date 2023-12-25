@@ -1,0 +1,245 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="../imgs/cropped-Asset-2.png" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="spin.css">
+  <title>Latin Spice Bistro</title>
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <img src="../imgs/logo (1).png" alt="Latin Spice Bistro Logo">
+    </div>
+    <nav>
+      <ul>
+        <li> <a id="form-open" href="#">Login</a></li>
+        <li class="dropdown" id="drop">
+          <i class="cursor fa fa-user-circle-o" aria-hidden="true"> <i class="fa fa-caret-down"></i></i>
+          <div class="dropdown-content">
+            <a id="user" href="#"></a>
+            <a id="myLink">LogOut</a>
+          </div>
+        </li>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="../about/about.html">About Us</a></li>
+        <li><a href="../menu/menu.html">Menu</a></li>
+        <li><a href="../contact/contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+  <audio controls="controls" id="applause" src="./applause.mp3" type="audio/mp3"></audio>
+  <audio controls="controls" id="wheel" src="./wheel.mp3" type="audio/mp3"></audio>
+  <div class="mainbox" id="mainboxSpinner">
+    <div class="box" id="box">
+      <div class="box1">
+        <span class="font span1"><b>Samsung Tab A6</b></span>
+        <span class="font span2"><b>JBL Speaker</b></span>
+        <span class="font span3"><b>Magic Roaster</b></span>
+        <span class="font span4"><b>Sepeda Aviator</b></span>
+        <span class="font span5"><b>Rice Cooker <br />
+            Philips</b></span>
+      </div>
+      <div class="box2">
+        <span class="font span1"><b>Lunch Box Lock&Lock</b></span>
+        <span class="font span2"><b>Air Cooler <br />
+            Sanken</b></span>
+        <span class="font span3"><b>Ipad Mini 4</b></span>
+        <span class="font span4"><b>Exclusive Gift</b></span>
+        <span class="font span5"><b>Electrolux <br />
+            Blender</b></span>
+      </div>
+    </div>
+    <button class="spin" onclick="spin()">SPIN</button>
+  </div>
+  <div class="hero">
+    <div id="slider-container">
+      <div id="slider">
+        <div class="slide"> <img src="../imgs/Latin-Spice-Bistro202-11.17-9-scaled.jpg" alt="Hero Image"></div>
+        <div class="slide"><img src="../imgs/Latin Spice Bistro-334.jpg" alt="Hero Image"></div>
+        <div class="slide"> <img src="../imgs/Chocolate.jpg" alt="Hero Image"></div>
+        <div class="slide"> <img src="../imgs/Latin Spice Bistro3422.jpg" alt="Hero Image"></div>
+      </div>
+    </div>
+
+    <div class="hero-text">
+      <h1>WELCOME TO LATIN SPICE BISTRO</h1>
+      <p>Authentic Latin American Cuisine & Vibes</p>
+      <button onclick="openMenuPage()">Order Online</button>
+    </div>
+  </div>
+
+  <main>
+    <section class="about-section">
+      <div class="about-content">
+        <h2>ABOUT US</h2>
+        <p>Latin Spice Bistro is a family-owned authentic Latin American cuisine restaurant in Hamilton, Ontario.
+          Inspired by Mexican cooking with one simple goal in mind: creating a place where people could experience the
+          authentic feel of Latin America with its gourmet food and delicious tastes, incredible live music and warm
+          familiar and festive vibes.<br><br> Latin Spice Bistro is the best Mariachi and Live Music restaurant in the
+          town, perfect if you want to celebrate your birthday or spend an unforgettable night. Celebrate a true fiesta
+          with authentic Mexican mariachis, live music, and the best drinks! We have Margaritas, Coronas, Tequila, Piña
+          Coladas, Sangrías, Martinis, Micheladas, Mezcal, and many signature drinks that will keep you dancing and
+          singing all night.</p>
+        <button onclick="openAboutPage()">Read More</button>
+      </div>
+
+    </section>
+
+    <section id="menu">
+      <h2>OUR MENU</h2>
+      <p>Introducing a vast menu of culinary delights, and offering a whole sensory experience from Mexico to Hamilton.
+      </p>
+    </section>
+
+
+    <section class="three-columns">
+      <div class="column-container">
+        <div class="bg-image f_img">
+          <h2 class="box-content">Signature Dish</h2>
+          <p class="box-content">Grilled octopus, served with roasted potatoes, sliced tomatoes, sliced avocado,
+            romaine, and garnished with fresh parsley</p>
+          <button onclick="openMenuPage()">View Menu</button>
+        </div>
+
+        <div class="bg-image s_img">
+          <h2 class="box-content">Signature Drinks</h2>
+          <p class="box-content">Rum, Gin, Blue Curacao, Lime Juice, Champagne & Mint, Margarita, Old Fashioned, Mojito,
+            Martini, Cosmopolitan, Whiskey Sour</p>
+          <button onclick="openMenuPage()">View Menu</button>
+        </div>
+
+        <div class="bg-image t_img">
+          <h2 class="box-content">Signature Dessert</h2>
+          <p class="box-content">Smashable chocolate calavera filled with fresh fruit, marshmallows & ice cream,
+            decorated with churros & chocolate syrup</p>
+          <button onclick="openMenuPage()">View Menu</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <section>
+    <div class="two-column-section">
+      <div class="text-column">
+        <h2>COME TO THE FIESTA!</h2>
+        <p>Latin Spice Bistro is the best Mariachi and Live Music restaurant in Hamilton, perfect if you want to
+          celebrate your birthday or spend an unforgettable night. Celebrate a true fiesta with authentic Mexican
+          mariachis, live music, bands, and the best drinks! We have Margaritas, Coronas, Tequila, Piña Coladas,
+          Sangrías, Martinis, Micheladas, Mezcal, and many signature drinks that will keep you dancing and singing all
+          night.
+          <br><br>Visit us from Wednesday to Sunday, enjoy the music of Mariachi Arriba Jalisco, the best DJs, and our
+          special Margarita Wednesdays to celebrate with us on any occasion! We have it all to party big time with your
+          loved ones and enjoy delicious food and drinks.
+        </p>
+        <button onclick="openContactPage()">Book Your Special Events</button>
+      </div>
+      <div class="image-column">
+        <img src="../imgs/Untitled.png" alt="Image">
+      </div>
+    </div>
+  </section>
+
+  <footer class="four-column-footer">
+    <div class="footer-column">
+      <div class="logo">
+        <img src="../imgs/logo (1).png" alt="Logo">
+      </div>
+    </div>
+    <div class="footer-column">
+      <div class="navigation">
+        <h3>Important Links</h3>
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="../about/about.html">About Us</a></li>
+          <li><a href="../menu/menu.html">Menu</a></li>
+          <li><a href="../contact/contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-column">
+      <div class="address">
+        <h3>Our Location</h3>
+        <p>55 Upper James Street, Hamilton, Ontario <br><br> Reservations: +1 403 558 7870</p>
+      </div>
+    </div>
+    <div class="footer-column">
+      <div class="social-links">
+        <h3>Follow Us</h3>
+        <a href="#"><img src="../imgs/facebook.png" alt="Facebook"></a>
+        <a href="#"><img src="../imgs/twitter-sign.png" alt="Twitter"></a>
+        <a href="#"><img src="../imgs/instagram.png" alt="Instagram"></a>
+      </div>
+    </div>
+  </footer>
+  <section class="home">
+    <div class="form_container">
+      <i class="uil uil-times form_close"></i>
+
+      <form id="loginForm" class="form login_form">
+        <h2>Login</h2>
+        <div class="input_box">
+          <input type="email" id="loginEmail" placeholder="Enter your email" />
+          <span id="loginEmailError" class="error"></span>
+          <i class="uil uil-envelope-alt email"></i>
+        </div>
+        <div class="input_box">
+          <input type="password" id="loginPassword" placeholder="Enter your password" />
+          <span id="loginPasswordError" class="error"></span>
+          <i class="uil uil-lock password"></i>
+          <i class="uil uil-eye-slash pw_hide" id="loginPwToggle"></i>
+        </div>
+
+        <button type="submit" class="button">Login Now</button>
+
+        <div class="login_signup">Don't have an account? <a href="#" id="signup">Signup</a></div>
+      </form>
+
+
+      <form id="signupForm" class="form signup_form">
+        <h2>Signup</h2>
+        <div class="input_box">
+            <i class="fa fa-user-circle-o"></i>
+            <input type="name" class="validate" id="name" placeholder="Enter your name" />
+            <span id="nameError" class="error"></span>
+        </div>
+        <div class="input_box">
+            <input type="email" class="validate" id="signupEmail" placeholder="Enter your email" />
+            <span id="emailError" class="error"></span>
+            <i class="uil uil-envelope-alt email"></i>
+        </div>
+        <div class="input_box">
+            <input type="password" class="validate" id="signupPassword" placeholder="Create password" />
+            <span id="passwordError" class="error"></span>
+            <i class="uil uil-lock password"></i>
+            <i class="uil uil-eye-slash pw_hide" id="signupPwToggle"></i>
+        </div>
+        <div class="input_box">
+            <input type="password" class="validate" id="confirmPassword" placeholder="Confirm password" />
+            <span id="confirmPasswordError" class="error"></span>
+            <i class="uil uil-lock password"></i>
+            <i class="uil uil-eye-slash pw_hide" id="confirmPwToggle"></i>
+        </div>
+    
+        <button type="submit" class="button">Signup Now</button>
+    
+        <div class="login_signup">Already have an account? <a href="./" id="login">Login</a></div>
+    </form>
+    
+    </div>
+  </section>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <script src="spin.js"></script>
+  <script  src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=DM Sans"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="contact.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="../imgs/logo (1).png" alt="Latin Spice Bistro Logo" />
+      </div>
+      <nav>
+        <ul>
+            <li><a href="../home/index.html">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="../menu/menu.html">Menu</a></li>
+            <li><a href="./contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="first-section">
+        <div class="column">
+          <div class="forminfo"><h1 style="font-size: 25px;">Please check your information and confirm</h1>
+
+            <p>First Name: <span id="confirmFirstName"></span></p>
+            <p>Last Name: <span id="confirmLastName"></span></p>
+            <p>Email: <span id="confirmEmail"></span></p>
+            <p>Phone: <span id="confirmPhone"></span></p>
+            <p>Date: <span id="confirmDate"></span></p>
+            <p>Time: <span id="confirmTime"></span></p>
+            <p>Event Type: <span id="confirmEventType"></span></p>
+            <p>Number of Guests: <span id="confirmGuests"></span></p>
+        
+            <!-- Confirm and Go Back buttons -->
+            <button onclick="confirmReservation()">Confirm</button>
+            <button onclick="goBack()">Go Back</button>
+          </div>
+          
+        </div>
+        <div class="column">
+          <img
+            src="../imgs/big-event-hall-interior-restaurant_114579-2078.jpg"
+            alt="Image"
+          />
+        </div>
+      </section>
+
+      <!-- Second Section -->
+      <section id="contact-info">
+        <div class="column-info">
+          <img src="../imgs/ezgif-5-dd9c7a3bf0.png" alt="call us icon" />
+          <p>Call us</p>
+          <a href="tel:+1556 555 777"><h3>+1556 555 777</h3></a>
+        </div>
+        <div class="column-info">
+          <img
+            src="../imgs/ezgif-5-cd5ee9267b.png"
+            alt="Easy large chain support image"
+          />
+          <p>Email on</p>
+          <a href="mailto:Mmazid0643@conestogac.on.ca"
+            ><h3>Mmazid0643@conestogac.on.ca</h3></a
+          >
+        </div>
+        <div class="column-info">
+          <img
+            src="../imgs/ezgif-5-b43cee4877.png"
+            alt="Multi-lingual support image"
+          />
+          <p>Book a table</p>
+          <h3>Call us or fill the form below</h3>
+        </div>
+      </section>
+
+      <!-- Third Section -->
+      <section id="third-section">
+        <div class="column">
+    
+
+          <iframe
+            style="filter: invert(90%)"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11644.984055780253!2d-80.2650421!3d43.141363!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882c6608c9630f43%3A0x6ff1f7bf37ed092!2sConestoga%20College%20-%20Brantford!5e0!3m2!1sen!2sca!4v1702180563676!5m2!1sen!2sca"
+            width="100%"
+            height="600"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+       
+      </section>
+
+<!-- fourth section -->
+      <section id="fourth-section">
+        <div class="column">
+          <h1 id="contact">FAQs</h1>
+
+           <button class="accordion">
+            How do I make a reservation at the restaurant?
+          </button>
+          <div class="panel">
+            <p>
+              To make a reservation, you can visit our official website and use
+              the online booking system. Alternatively, you can call our
+              reservation hotline during business hours. We recommend making
+              reservations in advance to secure your preferred dining time.
+            </p>
+          </div>
+
+          <button class="accordion">
+            Is there a cancellation policy for restaurant reservations?
+          </button>
+          <div class="panel">
+            <p>
+              Yes, we have a cancellation policy in place. We kindly ask that
+              you inform us at least 24 hours in advance if you need to cancel
+              or modify your reservation. This allows us to manage our seating
+              efficiently and accommodate other guests.
+            </p>
+          </div>
+
+          <button class="accordion">
+            Can I request a specific table or seating area when making a
+            reservation?
+          </button>
+          <div class="panel">
+            <p>
+              Absolutely! While we cannot guarantee specific tables, we do our
+              best to accommodate special requests. You can mention your
+              preference for indoor or outdoor seating, a quiet corner, or a
+              window view, and we will strive to make your dining experience as
+              enjoyable as possible.
+            </p>
+          </div>
+
+          <button class="accordion">
+            What should I do if I have special dietary requirements or
+            allergies?
+          </button>
+          <div class="panel">
+            <p>
+              If you have any dietary restrictions or allergies, please notify
+              us when making your reservation. Our staff is well-trained to
+              assist with special requests, and our chefs can often customize
+              dishes to meet your needs. This information allows us to provide
+              you with a safe and enjoyable dining experience.
+            </p>
+          </div>
+
+          <button class="accordion">
+            Do you accept walk-in customers, or is a reservation required?
+          </button>
+          <div class="panel">
+            <p>
+              While we do accept walk-in customers, we highly recommend making a
+              reservation, especially during peak hours or special events.
+              Reservations help us ensure that we can accommodate all guests and
+              provide a seamless dining experience.
+            </p>
+          </div>
+
+          <button class="accordion">
+            Can I modify the number of guests in my reservation after it has
+            been confirmed?
+          </button>
+          <div class="panel">
+            <p>
+              Yes, you can modify the number of guests in your reservation, but
+              we appreciate it if you notify us in advance. This helps us
+              arrange the seating accordingly and ensures that we can provide
+              the best possible service for your party. Please contact our
+              reservation team to make any adjustments to your booking.
+            </p>
+          </div>
+        </div>
+        </section>
+      </section>
+    </main>
+
+    <footer class="four-column-footer">
+      <div class="footer-column">
+        <div class="logo">
+          <img src="../imgs/logo (1).png" alt="Logo" />
+        </div>
+      </div>
+      <div class="footer-column">
+        <div class="navigation">
+          <h3>Important Links</h3>
+          <ul>
+            <li><a href="../home/index.html">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="../menu/menu.html">Menu</a></li>
+            <li><a href="./contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-column">
+        <div class="address">
+          <h3>Our Location</h3>
+          <p>
+            55 Upper James Street, Hamilton, Ontario <br />
+            Reservations: +1 403 558 7870
+          </p>
+        </div>
+      </div>
+      <div class="footer-column">
+        <div class="social-links">
+          <h3>Follow Us</h3>
+          <a href="#"><img src="../imgs/facebook.png" alt="Facebook" /></a>
+          <a href="#"><img src="../imgs/twitter-sign.png" alt="Twitter" /></a>
+          <a href="#"><img src="../imgs/instagram.png" alt="Instagram" /></a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="confirmation.js"></script>
+  </body>
+</html>
